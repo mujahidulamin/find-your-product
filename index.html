@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Your Product</title>
+    <!-- daisy ui link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.24.2/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="p-4">
+    <!-- input label -->
+    <header class="mb-4">
+        <div class="form-control w-1/2 mx-auto max-w-xs">
+            <label class="label">
+                <span class="label-text">Search Your Product</span>
+                <span class="label-text-alt">Press <kbd class="kbd kbd-sm">Enter</kbd></span>
+            </label>
+            <input id="search-field" type="text" placeholder="Search Your Product Here"
+                class="input input-bordered w-full max-w-xs" />
+        </div>
+    </header>
+    <progress id="spinner" class="progress w-full hidden"></progress>
+    <!-- no result found -->
+    <section id="not-found" class="mb-4">
+
+    </section>
+
+    <main>
+        <div class="flex...   sm:flex-col  lg:flex-row...
+      ">
+            <!-- menu -->
+            <div class="flex-none">
+                <ul id="all-menu" class="menu bg-secondary text-secondary-content p-2 rounded-box mb-8">
+
+                </ul>
+            </div>
+
+
+            <!-- product -->
+            <div id="product-container" class="grow grid sm:grid-cols-1 lg:grid-cols-4 gap-4 ml-4">
+
+            </div>
+        </div>
+
+
+        <!-- modal -->
+
+        <input type="checkbox" id="my-modal-3" class="modal-toggle" />
+        <div class="modal">
+            <div class="modal-box relative">
+                <label for="my-modal-3" class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
+                <!-- <h3 class="text-lg font-bold">Congratulations random Internet user!</h3>
+                 -->
+                <div id="modal-body">
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <!-- js -->
+    <script src="js/app.js"></script>
+</body>
+
+</html>
